@@ -23,5 +23,37 @@
             <artifactId>spring-webmvc</artifactId>
             <version>4.1.9.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <port>8080</port>
+                    <path>/demo</path>
+                    <uriEncoding>UTF-8</uriEncoding>
+                    <update>true</update>
+                    <backgroundProcessorDelay>10</backgroundProcessorDelay>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
