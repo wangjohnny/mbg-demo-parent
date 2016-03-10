@@ -12,11 +12,13 @@ generatorConfig.xml：MBG 的标准配置文件，具体请 mybatis generator �
 #演示代码生成
 执行 mbg-demo-generator 项目下 mybatis-generator.sh。
 
-1.尝试修改子类(Model 与 Mappper)，重新自动生成;
-
-2.尝试删除生成代码(Model 与 Mapper)，重新生成代码;
+* 尝试修改子类(Model 与 Mappper)，重新自动生成;
+* 尝试删除生成代码(Model 与 Mapper)，重新生成代码;
 
 通过以上方式，来体验代码生成的方式。
 
 #web方式演示
 在命令行下，执行 mbg-demo-webapp目录下的 run.sh，通过 maven 来执行 tomcat 插件，然后通过浏览器访问http://localhost:8080/demo/user/list，就可以看到演示数据了
+
+#注意事项
+> 命令脚本都是 mac 下写的，没在其它平台测试过。linux 估计不需要修改，windows可能需要。
