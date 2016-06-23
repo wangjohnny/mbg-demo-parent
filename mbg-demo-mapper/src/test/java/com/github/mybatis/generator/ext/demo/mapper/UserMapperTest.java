@@ -31,7 +31,8 @@ public class UserMapperTest extends BaseSpringTest {
         List<User> list = userMapper.selectByExample(ex);
 
         for (User user : list) {
-            System.out.println("姓名=" + user.getName() + ", 生日=" + user.getBirthday().toLocaleString() + ", 年龄=" + user.getAge());
+            System.out.println("SID=" + user.getSid() + ",姓名=" + user.getName() + ", 生日="
+                    + user.getBirthday().toLocaleString() + ", 年龄=" + user.getAge());
         }
     }
 }
