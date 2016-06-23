@@ -116,18 +116,4 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>mbg-maven-repo</id>
-            <url>https://raw.githubusercontent.com/wangjohnny/maven-repo/master/repository</url>
-        </repository>
-    </repositories>
-    
-    <pluginRepositories>
-        <pluginRepository>
-            <id>mbg-maven-repo</id>
-            <url>https://raw.githubusercontent.com/wangjohnny/maven-repo/master/repository</url>
-        </pluginRepository>
-    </pluginRepositories>
-
 </project>
