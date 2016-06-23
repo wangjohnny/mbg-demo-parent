@@ -7,5 +7,5 @@ import com.github.mybatis.mapper.GenericMapper;
  /**
  * 由MBG工具自动生成，添加与扩展XML文件中对应的同名方法
  **/
-public interface UserMapper extends GenericMapper<User, UserExample, String> {
+public interface UserMapper extends GenericMapper<User, UserExample, Integer> {
 }
