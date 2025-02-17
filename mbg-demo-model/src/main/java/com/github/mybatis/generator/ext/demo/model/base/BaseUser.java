@@ -4,7 +4,7 @@ import com.github.mybatis.model.BaseModel;
 import java.io.Serializable;
 import java.util.Date;
 
-public class BaseUser extends com.github.mybatis.model.BaseModel<Integer> implements Serializable {
+public class BaseUser extends BaseModel<Integer> implements Serializable {
     private String name;
 
     private String gender;
